@@ -1,0 +1,8 @@
+{
+  "name": "prueba_speech_reproduction",
+  "app_id": "f60f6eb2",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
