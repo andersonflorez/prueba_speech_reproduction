@@ -7,8 +7,24 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+ <button ion-button block color="primary" (click)="escuchar()">Escuchar</button>
+ <br>
+ <ion-content>
+  <ion-list>
+    <ion-item>{{estado}}</ion-item>
+    <ion-item>{{permisos}}</ion-item>
+    <ion-item>{{disponible}}</ion-item>
+    <ion-item>{{resultado}}</ion-item>
+    <!--<ion-item>{{resultados}}</ion-item>-->
+    <ion-item>{{match}}</ion-item>
+    <!--<ion-list-header>Lenguajes</ion-list-header>
+    <ion-item-group *ngFor="let item of supportLenguage">
+      <ion-item>{{item}}</ion-item>
+    </ion-item-group>-->
+    <ion-list-header>Resultado</ion-list-header>
+    <ion-item-group *ngFor="let item of resultados">
+      <ion-item>{{item}}</ion-item>
+    </ion-item-group>
+  </ion-list>
+</ion-content>
 </ion-content>
